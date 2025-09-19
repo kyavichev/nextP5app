@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Head from 'next/head';
 import dynamic from "next/dynamic";
 
-import { sketch } from "@/components/simSketch";
+import { sketch } from "@/components/simSketchWithSound";
 
 // const SketchComponent = dynamic(() => import("../components/sketchComponent"), { ssr: false, });
 

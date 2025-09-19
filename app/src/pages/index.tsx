@@ -24,28 +24,34 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div
-				className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-			>
+			<div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
 				<main className={styles.main}>
-					<Image
-						className={styles.logo}
-						src="https://nextjs.org/icons/next.svg"
-						alt="Next.js logo"
-						width={180}
-						height={38}
+					<Image className={styles.logo} src="/p5js.png"
+						alt="logo"
+						width={200}
+						height={200}
 						priority
 					/>
-					<ol>
-						<li>
-							Get started by editing <code>src/pages/index.tsx</code>.
-						</li>
-						<li>Save and see your changes instantly.</li>
-					</ol>
+					<section>
+						Trying to figure out how to load p5 sound library
+					</section>
 
-					<Link href='/simplea'> Simple A </Link>
-					<Link href='/simpleb'> Simple B </Link>
-					<Link href='/simplec'> Simple C </Link>
+					<section>
+						<ul>
+							<li>
+								<Link href='/simplea'> Simple A </Link>
+							</li>
+							<li>
+								<Link href='/simpleb'> Simple B </Link>
+							</li>
+							<li>
+								<Link href='/simplec'> Simple C </Link>
+							</li>
+							<li>
+								<Link href='/simpled'> Simple D (includes audio) </Link>
+							</li>
+						</ul>
+					</section>
 				</main>
 				<footer className={styles.footer}>
 					Made by Kon

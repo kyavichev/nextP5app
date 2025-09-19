@@ -1,12 +1,19 @@
 
 import React from "react";
 import { NextReactP5Wrapper } from "@p5-wrapper/next";
+import { Sketch } from "@p5-wrapper/react";
 // import { ReactP5Wrapper } from "@p5-wrapper/react";
-import { sketch } from "./simSketch";
+// import { sketch } from "./simSketch";
 import commonStyles from "@/styles/common.module.css";
 
 
-export function SketchComponent() 
+type SketchComponentProps =
+{
+	sketch: Sketch;
+}
+
+
+export function SketchComponent({sketch}: SketchComponentProps) 
 {
 	return (
 		<div className={commonStyles.playArea}>
